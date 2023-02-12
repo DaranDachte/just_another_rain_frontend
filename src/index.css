@@ -3,3 +3,8 @@
   padding: 0px;
   
 }
+
+@font-face {
+  font-family:"Rain Shower" ;
+  src: url(./Fonts/RainShower.otf);
+}
