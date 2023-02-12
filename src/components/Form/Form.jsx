@@ -17,7 +17,7 @@ const Form = (props) => {
   const onSubmit = async (formData) => {
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/questions",
+        "https://just-another-rain-api.onrender.com/questions",
         formData
       );
       setResponseMessage("Successfully sent!");
@@ -40,7 +40,7 @@ const Form = (props) => {
           <p className={styles.error}>{errors.name?.message}</p>
         )}
         <h4>Email:</h4>
-         <input
+        <input
           className={styles.input}
           type="text"
           placeholder="Enter your e-mail address"
