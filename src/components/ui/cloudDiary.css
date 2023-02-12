@@ -1,0 +1,50 @@
+.cloudD {
+    width: 500px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -150px;
+    left: 300px;
+  }
+  
+  #cloud-baseD {
+    top: 600px;
+    height: 60px;
+    filter: url(#filter-base);
+    box-shadow: 200px 170px 19px 40px rgba(255, 255, 255, 0.9);
+  }
+  #cloud-backD {
+    top: 550px;
+    height: 20px;
+    width: 500px;
+    filter: url(#filter-back);
+    box-shadow: 200px 200px 10px 40px rgba(215, 215, 215, 0.3);
+  }
+  
+  #cloud-midD {
+    top: 550px;
+    width: 500px;
+    height: 30px;
+    filter: url(#filter-mid);
+    box-shadow: 210px 250px 28px 30px rgba(66, 105, 146, 0.2);
+  }
+  
+  #cloud-frontD {
+    top: 550px;
+    width: 400px;
+    height: 30px;
+    left: 350px;
+    filter: url(#filter-front);
+    box-shadow: 210px 272px 30px 0px rgba(0, 0, 0, 0.4);
+  }
+  
+  .diary{
+    font-size: 25px;
+    color: black; 
+    position: absolute;
+    top: 800px;
+    left:750px;
+    z-index: 4;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  }

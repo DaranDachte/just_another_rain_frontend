@@ -1,0 +1,121 @@
+.wrapper{
+    position: relative;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.diaryVideo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-top: -20px;
+}
+
+.diaryVideoWrapper{
+    position:relative;
+    height: 106vh;
+    scroll-snap-align: start;
+}
+
+.sun{
+    position: absolute;
+    top: 100px;
+    left:100px;
+    width: 100px;
+    height: 100px;
+    animation-name: sunAnimation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sunAnimation{
+    50%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.rain{
+    position: absolute;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    top:500px;
+    color: wheat;
+}
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+                    }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .rain span {
+        display: inline-block;
+        animation: scroll 65s infinite linear;
+    } 
+    
+    .hollandFlag{
+        position: absolute;
+        opacity: 0;
+    }
+
+    .hollandFlagAppearAnimation{
+        animation-name: hollandAnimation;
+        animation-duration: 9s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+       
+    }
+
+    @keyframes hollandAnimation {
+            50% {
+            opacity: 0.9;
+            }
+            100%{
+                opacity:0;
+            }
+        }
+
+    
+        .tulip{
+            position: absolute;
+            opacity: 0;
+            top: 350px;
+        }
+
+       
+        .tulipAnimation{
+            animation-name: tulipAnimation;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            animation-delay: 20s;
+        }
+
+        @keyframes tulipAnimation {
+            50% {
+            opacity: 0.9;
+            }
+            100%{
+                opacity:0;
+            }
+        }
+
+        .scrollDown{
+            position:absolute;
+            bottom: 50px;
+            right: 50px;
+            width: 80px;
+            height: 80px;
+            fill: red;
+        }

@@ -1,0 +1,21 @@
+h3{
+    cursor:pointer;
+    
+}
+
+.wrapper{
+    width: 850px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    background-color:rgb(252,252,252, 0.8) ;
+    border:none;
+    box-shadow:  4px 10px 14px 0px rgba(0,0,0,0.7);
+}
+
+.question{
+    margin-top:10px;
+    border-top: 1px solid black;
+}
+

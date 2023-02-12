@@ -1,0 +1,46 @@
+.container{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    padding: 30px;
+    grid-gap: 10px;
+}
+
+.title{
+    width: 800px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -70px;
+}
+
+.copy{
+    display: inline-flex;
+    align-items: center;
+}
+.input{
+    width: 280px;
+}
+
+.copied{
+    display: flex;
+    align-items:center ;
+    color:green;
+}
+
+.pointer{
+    cursor: pointer;
+    color:green
+}
+
+.flicker{
+
+   
+        animation: flicker 5s linear infinite;
+     }
+
+
+@keyframes flicker {
+    0% { color:black}
+    25% { color:red}
+    75% { color:green }
+    100%{ color:black}
+  }

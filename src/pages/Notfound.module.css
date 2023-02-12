@@ -1,0 +1,24 @@
+.wrapper{
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    font-size: 20px;
+    font-family: "Rain Shower";
+    }
+.video{
+    width: 100%;
+    position:fixed;
+}
+
+
+.flicker {
+    animation: flicker 5s linear infinite;
+ }
+
+ @keyframes flicker {
+   0% { color:black}
+   25% { color:red}
+   75% { color:green }
+   100%{ color:black}
+ }
