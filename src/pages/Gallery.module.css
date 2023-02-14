@@ -1,14 +1,24 @@
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
+.wrapper {
     position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
     background-image: url("../assets/img/bg3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+    flex: 1;
 }
 
-.container > div{
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.list > div{
     margin: 50px;
 }

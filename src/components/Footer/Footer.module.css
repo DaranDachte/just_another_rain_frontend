@@ -1,16 +1,16 @@
-.wrapper{
-display: flex;
- height: 50px; 
-font-family: "Rain Shower";
-width: 100%;
-border: none;
-background-color:#b8e6eb;
-justify-content: space-around;
-align-items: center;
-scroll-snap-align: end;
+.wrapper {
+    display: flex;
+    min-height: 50px;
+    font-family: "Rain Shower", serif;
+    width: 100%;
+    border: none;
+    background-color: #b8e6eb;
+    justify-content: space-around;
+    align-items: center;
+    scroll-snap-align: end;
 }
 
-.link{
+.link {
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -21,16 +21,24 @@ scroll-snap-align: end;
     box-shadow: 3px -2px 8px 0px rgba(0,0,0,0.75); */
 }
 
-.linkText{
- }
+.linkText {
+}
 
 .flicker {
-     animation: flicker 5s linear infinite;
-  }
- 
-  @keyframes flicker {
-    0% { color:black}
-    25% { color:red}
-    75% { color:green }
-    100%{ color:black}
-  }
+    animation: flicker 5s linear infinite;
+}
+
+@keyframes flicker {
+    0% {
+        color: black
+    }
+    25% {
+        color: red
+    }
+    75% {
+        color: green
+    }
+    100% {
+        color: black
+    }
+}

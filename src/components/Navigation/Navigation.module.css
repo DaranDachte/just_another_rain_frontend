@@ -1,19 +1,17 @@
 .wrapper {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-display:flex;
-justify-content: space-around;
-z-index: 2;
-
-
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
 }
-a{
- text-decoration: none; 
- font-family: "Rain Shower";
- color:#f3401f;
- font-size: 30px;
+
+a {
+    text-decoration: none;
+    font-family: "Rain Shower", serif;
+    color: #f3401f;
+    font-size: 2rem;
 }
 

@@ -4,7 +4,6 @@ const NewsItem = ({ country, language, description, link }) => {
   return (
     <a className={styles.wrapper} href={link} target="_blank" rel="noreferrer">
       <h3>
-        {" "}
         <em>Origin of news:</em> {country}
       </h3>
       <h5>

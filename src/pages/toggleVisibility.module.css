@@ -1,23 +1,24 @@
-.title{
+.title {
     display: inline-block;
-    cursor:pointer;
-    border: 1px solid rgb(149, 131, 131); 
-    color:rgb(145, 105, 105);
+    cursor: pointer;
+    border: 1px solid rgb(149, 131, 131);
+    color: rgb(145, 105, 105);
     background-color: aquamarine;
     opacity: 0.8;
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
-    font-family: "Rain Shower";
- }
- .text{
-width: 1000px;
-height: 300px;
-overflow: auto;
-border: 1px solid gray;
-background-color: bisque;
-opacity: 0.8;
-border-radius: 5px;
-margin: 5px;
-padding: 5px;
+    font-family: "Rain Shower", serif;
+}
+
+.text {
+    width: 1000px;
+    height: 300px;
+    overflow: auto;
+    border: 1px solid gray;
+    background-color: bisque;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
 }

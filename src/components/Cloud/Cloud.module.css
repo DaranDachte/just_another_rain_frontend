@@ -1,8 +1,7 @@
-
 .wrapper {
- width: 120px;
- height: 60px;
- position: relative;
+    width: 120px;
+    height: 60px;
+    position: relative;
 }
 
 .cloud {
@@ -11,43 +10,43 @@
     border-radius: 50%;
     top: 0;
     left: 0;
-  }
-  
-   .cloudBase {
+}
+
+.cloudBase {
     background-color: rgba(255, 255, 255, 0.9);
     height: 60px;
     filter: url(#filter-base);
     box-shadow: 0 0 19px 40px rgba(255, 255, 255, 0.9);
-  }
+}
 
-   .cloudBack {
+.cloudBack {
     background-color: rgba(215, 215, 215, 0.3);
     height: 20px;
     filter: url(#filter-back);
     box-shadow: 0 0 10px 40px rgba(215, 215, 215, 0.3);
-  }
-  
-  .cloudMid {
+}
+
+.cloudMid {
     background-color: rgba(66, 105, 146, 0.2);
     height: 30px;
     filter: url(#filter-mid);
     box-shadow: 0 0 28px 30px rgba(66, 105, 146, 0.2);
-  }
-  
-  .cloudFront {
+}
+
+.cloudFront {
     top: 500px;
     width: 400px;
     height: 30px;
     left: -20px;
     filter: url(#filter-front);
-    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.4);
-  }
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
 
-  .text {
-    font-size:1rem;
-    position:absolute;
+.text {
+    font-size: 2rem;
+    position: absolute;
     left: 50%;
-    top:  50%;
+    top: 50%;
     width: 100%;
     animation-name: text-animation;
     animation-duration: 3s;
@@ -55,15 +54,15 @@
     animation-delay: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
-    color:rgb(243, 64, 31);
-   }
-  
- .text:hover{
-  font-size: 3rem;
- }
-  
+    color: rgb(243, 64, 31);
+}
 
-  .cloudAnimation{
+.text:hover {
+    font-size: 3rem;
+}
+
+
+.cloudAnimation {
     animation-name: cloud-animation;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -71,16 +70,16 @@
     animation-fill-mode: forwards;
 }
 
-  @keyframes cloud-animation {
+@keyframes cloud-animation {
     100% {
-        opacity: 0;      
+        opacity: 0;
     }
-  }
+}
 
-  @keyframes text-animation{
+@keyframes text-animation {
     100% {
         opacity: 1;
-        margin: 0 0px;
-    }  
+        margin: 0;
+    }
 }
 

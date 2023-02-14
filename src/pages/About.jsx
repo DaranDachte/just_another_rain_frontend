@@ -9,19 +9,21 @@ import Footer from "../components/Footer";
 
 const About = () => {
   const [version, setActiveVersion] = useState(0);
+
   return (
-    <>
       <div className={styles.wrapper}>
         <Navigation />
 
-        <video className={styles.video} src={hardSnow} autoPlay muted loop />
+        <div className={styles.videoWrapper}>
+          <video className={styles.video} src={hardSnow} autoPlay muted loop />
+        </div>
 
-        <div className={styles.aboutProject}>
+        <p className={styles.aboutProject}>
           Here you can get an idea of what this project is all about. What
           prompted me to create it. What is the purpose of the project. How I am
           trying to achieve this goal. For ease of explanation I created two
           versions.
-        </div>
+        </p>
         <div className={styles.container}>
           <ToggleVisibility
             index={1}
@@ -298,7 +300,6 @@ const About = () => {
         </div>
         <Footer />
       </div>
-    </>
   );
 };
 
