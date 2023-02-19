@@ -55,10 +55,12 @@
     animation-fill-mode: forwards;
     opacity: 0;
     color: rgb(243, 64, 31);
+    font-family: "Rain Shower", serif;
+    text-decoration: none;
 }
 
 .text:hover {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 

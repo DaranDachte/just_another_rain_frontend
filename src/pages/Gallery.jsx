@@ -22,11 +22,10 @@ const Gallery = () => {
     };
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} onClick={() => setActiveCardIndex(0)}>
                 <div className={styles.background}>
                     <div
                         className={styles.list}
-                        onClick={() => setActiveCardIndex(0)}
                     >
                         <Navigation/>
                         <Card

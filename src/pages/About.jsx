@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation";
 import styles from "./About.module.css";
 import ToggleVisibility from "./ToggleVisibility";
 import { useState } from "react";
-import hardSnow from "../assets/videos/hard_snow.mp4";
+import hardSnow from "../assets/videos/hard_snow.webm";
 import { NavLink } from "react-router-dom";
 import Footer from "../components/Footer";
 
@@ -292,7 +292,7 @@ const About = () => {
                   of refugees - someone sells drugs, someone uses them, someone
                   steals... All this creates a huge negative field, which
                   absorbs new people and from which it can be very difficult to
-                  get out. 
+                  get out.
                 </p>
               </>
             }

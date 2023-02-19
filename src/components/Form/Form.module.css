@@ -1,30 +1,20 @@
-
-body {
-    font-family:  'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-}
-
-.container{
-    width: 100vw;
-    height: 100vh;
-    display: flex ;
-    justify-content: center;
-    align-items: center;
-    background-color: #1A5276;
-}
-
 .wrapper {
     border-radius: 5px;
     box-shadow: 8px 7px 5px 0 rgba(0, 0, 0, 0.7);
     padding: 20px;
-    width: 180px;
+    margin-right: 20px;
+    width: 250px;
     color: #1A5276;
     background-color:rgba(19,150, 57, 0.9);
     font-family: 'Times New Roman', Times, serif;
-    }
+}
+
+.label {
+    margin: 5px 0;
+}
 
 .input {
+    box-sizing: border-box;
     width: 100%;
     padding: 8px;
     border-radius: 5px;
@@ -40,6 +30,7 @@ body {
 }
 
 .textarea {
+    box-sizing: border-box;
     width: 100%;
     padding: 8px;
     resize: none;
@@ -60,9 +51,8 @@ body {
 
 .error{
     color:red;
-    font-size: 10px;
+    font-size: 0.8rem;
     margin: 5px 0;
 
 }
 
- 

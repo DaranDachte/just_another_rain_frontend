@@ -15,11 +15,11 @@ const Footer = () => {
         >
           <AiFillGithub />
 
-          <p className={styles.linkText}>GitHub</p>
+          <p className={styles.flicker}>GitHub</p>
         </a>
         <a href="mailto:darandachte@gmail.com" className={styles.link}>
           <AiOutlineMail />
-          <p className={styles.centerText}>Send Email</p>
+          <p className={styles.flicker}>Send Email</p>
         </a>
         <a
           href="https://www.paypal.com/donate/?hosted_button_id=FE7R74MJZ7PJU"
@@ -28,7 +28,7 @@ const Footer = () => {
           target="_blank"
         >
           <BiDonateHeart />
-          <p className={styles.linkText}>Donate</p>
+          <p className={styles.flicker}>Donate</p>
         </a>
     </div>
   );

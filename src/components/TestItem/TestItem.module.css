@@ -14,6 +14,28 @@
     transform: scale(1.2);
 }
 
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title h3 {
+    margin-left: 8px;
+}
+
+.flag {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
 .description {
     flex: 1;
+}
+
+.link {
+    text-decoration: none;
+    font-family: "Rain Shower", serif;
+    color: #f3401f;
+    font-size: 2rem;
 }
