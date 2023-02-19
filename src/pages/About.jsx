@@ -3,25 +3,27 @@ import Navigation from "../components/Navigation";
 import styles from "./About.module.css";
 import ToggleVisibility from "./ToggleVisibility";
 import { useState } from "react";
-import hardSnow from "../assets/videos/hard_snow.mp4";
+import hardSnow from "../assets/videos/hard_snow.webm";
 import { NavLink } from "react-router-dom";
 import Footer from "../components/Footer";
 
 const About = () => {
   const [version, setActiveVersion] = useState(0);
+
   return (
-    <>
       <div className={styles.wrapper}>
         <Navigation />
 
-        <video className={styles.video} src={hardSnow} autoPlay muted loop />
+        <div className={styles.videoWrapper}>
+          <video className={styles.video} src={hardSnow} autoPlay muted loop />
+        </div>
 
-        <div className={styles.aboutProject}>
+        <p className={styles.aboutProject}>
           Here you can get an idea of what this project is all about. What
           prompted me to create it. What is the purpose of the project. How I am
           trying to achieve this goal. For ease of explanation I created two
           versions.
-        </div>
+        </p>
         <div className={styles.container}>
           <ToggleVisibility
             index={1}
@@ -290,7 +292,7 @@ const About = () => {
                   of refugees - someone sells drugs, someone uses them, someone
                   steals... All this creates a huge negative field, which
                   absorbs new people and from which it can be very difficult to
-                  get out. 
+                  get out.
                 </p>
               </>
             }
@@ -298,7 +300,6 @@ const About = () => {
         </div>
         <Footer />
       </div>
-    </>
   );
 };
 

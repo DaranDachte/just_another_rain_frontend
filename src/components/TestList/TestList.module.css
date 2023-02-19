@@ -2,7 +2,7 @@
     display:grid;
     grid-template-columns:repeat(4, 1fr);
     padding: 30px;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 .title{
@@ -10,6 +10,7 @@
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: -70px;
+    margin-left: 30px;
 }
 
 .copy{

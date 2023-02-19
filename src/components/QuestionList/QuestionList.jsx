@@ -6,14 +6,12 @@ const QuestionList = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <>
       <div className={styles.container}>
         <Question
           index={1}
           isActive={activeIndex === 1}
           setActiveIndex={setActiveIndex}
           name="Carolina"
-          topic="Work in Germany"
           text="After completing my professional education in IT administration, I have been looking for
         jobs, but haven't got any interviews until now.
         My German level is on B1. However, I wonder if I will be able to secure a decent job on this level or if
@@ -38,7 +36,6 @@ const QuestionList = () => {
           isActive={activeIndex === 2}
           setActiveIndex={setActiveIndex}
           name="Sabrine"
-          topic="Work in Germany"
           text="Currently, I am looking for my very first job in Germany. However, I am afraid to make
         any mistakes when signing a contract. How can I check if the salary a company offers is fair and if the
         contract includes any clauses that would put me in a less favorable position?"
@@ -56,7 +53,6 @@ const QuestionList = () => {
           isActive={activeIndex === 3}
           setActiveIndex={setActiveIndex}
           name="Bastillio"
-          topic="Education"
           text="Good afternoon! I recently arrived in Germany and don't know where I can start learning German. Am I entitled to a subsidy from the state to pay for German language courses? To what level do I need to learn German in order to get a job here?"
           answer="Hello, thank you for your question. In Germany, the laws of each state (Bundesland) are very different. Therefore it is difficult to say how things are in all of Germany. In order to find out the laws of your Bundesland, you need to contact your city office(Bürgerbüro), the Socialalamt(Sozialamt), or a refugee placement center. 
         It also matters whether you live in a big industrial city where you can find a lot of schools or in a small town where you might have trouble finding a school. 
@@ -64,14 +60,6 @@ const QuestionList = () => {
        As for the level of language learning. If you want to apply for a good job, your level should be C1, with a proven certificate. In this case, you are guaranteed to feel confident in communication with your German colleagues, and they will feel comfortable talking to you. This level will greatly increase your chances of finding a good job in Germany."
         />
       </div>
-      <div className={styles.attention}>
-        <p>
-          Warning! We do not store your data, nor do we pass it on to
-          individuals or organizations. Your name is only needed so that we know
-          how to contact you correctly.
-        </p>
-      </div>
-    </>
   );
 };
 

@@ -1,7 +1,6 @@
 import styles from "./Question.module.css";
 
 const Question = ({
-  topic,
   text,
   name,
   isActive,
@@ -12,11 +11,11 @@ const Question = ({
   return (
     <div onClick={() => setActiveIndex(index)} className={styles.wrapper}
     onDoubleClick={() => setActiveIndex(false)}>
-      <h3>{text}</h3>
+      <h3 className={styles.question}>{text}</h3>
       {isActive && (
         <div>
           <h4>From {name}</h4>
-          <p className={styles.question}>{answer}</p>
+          <p className={styles.answer}>{answer}</p>
         </div>
       )}
     </div>

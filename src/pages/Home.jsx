@@ -1,8 +1,7 @@
 import React from "react";
-// import video from "../img/rainbow.mp4";
 import styles from "./Home.module.css";
 import Cloud from "../components/Cloud";
-import rainbow from "../assets/videos/rainbow.mp4";
+import rainbow from "../assets/videos/rainbow.webm";
 export default function Home() {
   return (
     <>

@@ -9,7 +9,6 @@ import Welcome from "./pages/Welcome";
 import Notfound from "./pages/Notfound";
 const AppRouter = () => {
   return (
-    <div>
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/home" element={<Home />} />
@@ -20,7 +19,6 @@ const AppRouter = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
-    </div>
   );
 };
 

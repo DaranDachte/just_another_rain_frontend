@@ -1,17 +1,38 @@
-.wrapper{
-display: flex;
-justify-content: space-between;
-background-image: url("../assets/img/bg2.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-.askButton{
+
+.flex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("../assets/img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+.askButton {
     width: 150px;
     height: 30px;
-    background-color:rgb(119, 202, 230, 0.9);
+    background-color: rgb(119, 202, 230, 0.9);
     border-radius: 5px;
-    border:none;
+    border: none;
     margin: 50px 10px 10px 10px;
-    box-shadow:  4px 5px 5px 0px rgba(0,0,0,0.7);
+    box-shadow: 4px 5px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+.attention {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgba(19, 150, 57, 0.9);
+    padding: 10px;
+    box-shadow: 4px 3px 5px 0 rgba(0, 0, 0, 0.75);
+    font-size: 0.8rem;
 }

@@ -1,6 +1,6 @@
 import styles from "./Welcome.module.css";
 import { useNavigate } from "react-router-dom";
-import video from "../assets/videos/Title.mp4";
+import video from "../assets/videos/Title.webm";
 import { useRef, useEffect } from "react";
 
 const Welcome = () => {
@@ -12,7 +12,7 @@ const Welcome = () => {
     if (audioRef.current) {
       audioRef.current.play();
     }
-    
+
     const tmp = audioRef.current;
 
     return () => tmp.pause();

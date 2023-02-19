@@ -5,7 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import styles from "./Form.module.css";
 import axios from "axios";
 
-const Form = (props) => {
+const Form = () => {
   const {
     register,
     handleSubmit,
@@ -27,9 +27,8 @@ const Form = (props) => {
   };
 
   return (
-    <>
       <form onSubmit={handleSubmit(onSubmit)} className={styles.wrapper}>
-        <h4>Name:</h4>
+        <h4 className={styles.label}>Name:</h4>
         <input
           className={styles.input}
           type="text"
@@ -39,7 +38,7 @@ const Form = (props) => {
         {!!errors.name && (
           <p className={styles.error}>{errors.name?.message}</p>
         )}
-        <h4>Email:</h4>
+        <h4 className={styles.label}>Email:</h4>
         <input
           className={styles.input}
           type="text"
@@ -49,7 +48,7 @@ const Form = (props) => {
         {!!errors.email && (
           <p className={styles.error}>{errors.email?.message}</p>
         )}
-        <h4>Topic of question:</h4>
+        <h4 className={styles.label}>Topic of question:</h4>
         <select
           className={styles.selector}
           placeholder="Choose topic of question"
@@ -64,7 +63,7 @@ const Form = (props) => {
           <option>Violence in family</option>
           <option selected>Other</option>
         </select>
-        <h4>Ask your question here:</h4>
+        <h4 className={styles.label}>Ask your question here:</h4>
         <textarea className={styles.textarea} {...register("text")} />
         {!!errors.text && (
           <p className={styles.error}>{errors.text?.message}</p>
@@ -74,7 +73,6 @@ const Form = (props) => {
         </button>
         {responseMessage && <p>{responseMessage}</p>}
       </form>
-    </>
   );
 };
 

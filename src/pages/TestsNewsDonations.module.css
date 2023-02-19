@@ -1,20 +1,25 @@
-.wrapper{
+.wrapper {
     position: relative;
-    height: 93vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.news {
+    padding-top: 100px;
+}
+
+.container {
     background-image: url("../assets/img/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    flex: 1;
+    display: flex;
+    gap: 15px;
 }
 
-
-.news{
-    position: absolute;
-    right: 0;
-    top:30px;
-    }
-
-    .tests{
+.tests {
     padding-top: 100px;
-    width: 85%;
-    }
+    width: 80%;
+}
