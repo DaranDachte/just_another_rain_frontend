@@ -47,3 +47,10 @@
     font-size: 1rem;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.link {
+    text-decoration: none;
+    font-family: "Rain Shower", serif;
+    color: #f3401f;
+    font-size: 2rem;
+}

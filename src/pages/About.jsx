@@ -52,12 +52,12 @@ const About = () => {
                 </p>
                 <p className={styles.pIndent}>
                   The following pages have been created so far:{" "}
-                  <NavLink to="/about">About</NavLink> - On this page you are
+                  <NavLink to="/about" className={styles.link}>About</NavLink> - On this page you are
                   now, there are two (short and full) descriptions of the
                   project.
                 </p>
                 <p className={styles.pIndent}>
-                  <NavLink to="/diary">Diary</NavLink> - The point of this page
+                  <NavLink to="/diary" className={styles.link}>Diary</NavLink> - The point of this page
                   is this. It is a video diary. Initially (in the first video)
                   it tells the story of a man who is depressed because of the
                   German rain. And he wants to talk to people who have already
@@ -72,7 +72,7 @@ const About = () => {
                   psychologists will be involved in the creation of each video.
                 </p>
                 <p className={styles.pIndent}>
-                  The <NavLink to="/gallery">Gallery</NavLink> page shows short
+                  The <NavLink to="/gallery" className={styles.link}>Gallery</NavLink> page shows short
                   stories of people who were forced to become refugees at an
                   advanced age.And in their new country, they have achieved
                   success and gained the respect of those around them. It is
@@ -86,7 +86,7 @@ const About = () => {
                 </p>
                 <p className={styles.pIndent}>
                   The{" "}
-                  <NavLink to="/questions_and_answers">
+                  <NavLink to="/questions_and_answers" className={styles.link}>
                     Questions and Answers
                   </NavLink>{" "}
                   page is meant to help people with answers to frequently asked
@@ -97,7 +97,7 @@ const About = () => {
                 </p>
                 <p className={styles.pIndent}>
                   The{" "}
-                  <NavLink to="/tests_and_donations">Tests and News</NavLink>{" "}
+                  <NavLink to="/tests_and_donations" className={styles.link}>Tests and News</NavLink>{" "}
                   page was designed to provide positive news about refugees. It
                   will help refugees themselves to be on a positive note and it
                   will also help others to see refugees in a positive light.
