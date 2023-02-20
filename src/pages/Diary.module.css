@@ -67,53 +67,6 @@
     animation: scroll 65s infinite linear;
 }
 
-.hollandFlag {
-    position: absolute;
-    opacity: 0;
-}
-
-.hollandFlagAppearAnimation {
-    animation-name: hollandAnimation;
-    animation-duration: 9s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-
-}
-
-@keyframes hollandAnimation {
-    50% {
-        opacity: 0.9;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-
-.tulip {
-    position: absolute;
-    opacity: 0;
-    top: 350px;
-}
-
-
-.tulipAnimation {
-    animation-name: tulipAnimation;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-delay: 20s;
-}
-
-@keyframes tulipAnimation {
-    50% {
-        opacity: 0.9;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 .scrollDown {
     position: absolute;
     bottom: 50px;
